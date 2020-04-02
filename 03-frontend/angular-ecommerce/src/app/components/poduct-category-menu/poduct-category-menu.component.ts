@@ -11,7 +11,9 @@ export class PoductCategoryMenuComponent implements OnInit {
 
   productCategories: ProductCategory [];
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService) {
+    console.log("ProductCategory component is CREATED")
+   }
 
   ngOnInit(): void {
     this.listProductCategories();
